@@ -1,0 +1,18 @@
+  service: lambda-test # NOTE: update this with your service name
+  provider:
+    name: aws
+    runtime: nodejs8.10
+  functions:
+    firstMethod:
+      handler: handler.firstMethod
+      events:
+             - http:
+                path: /
+                method: get
+
+    secondMethod:
+      handler: handler.secondMethod
+      events:
+            - http:
+                path: /secondMethod
+                method: get
