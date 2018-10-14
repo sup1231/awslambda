@@ -1,4 +1,4 @@
-  service: lambda-test # NOTE: update this with your service name
+  service: sup-lambda-test # NOTE: update this with your service name
   provider:
     name: aws
     runtime: nodejs8.10
